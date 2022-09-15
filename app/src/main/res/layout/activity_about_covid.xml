@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apl/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutCovidActivity"
+    tools:ignore="ResAuto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Virus Corona"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app2:layout_constraintStart_toStartOf="parent"
+            app2:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Virus corona (CoV) adalah keluarga besar virus yang yang dapat menginfeksi burung dan mamalia, termasuk manusia. Menurut World Health Organization (WHO) virus ini menyebabkan penyakit mulai dari flu ringan hingga infeksi pernapasan yang lebih parah seperti MERS-CoV DAN SARS-CoV.Virus Corona bersifat zoonosis, artinya ia merupakan penyakit yang dapat ditularkan antara hewan dan manusia. Rabies, Malaria, merupakan contoh dari penyakit zoonosis yang ada. Begitu pula dengan MERS yang ditularkan dari unta ke manusia."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            app2:layout_constraintEnd_toEndOf="parent"
+            app2:layout_constraintStart_toStartOf="parent"
+            app2:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/cardView7"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app2:layout_constraintEnd_toEndOf="parent"
+            app2:layout_constraintStart_toStartOf="parent"
+            app2:layout_constraintTop_toBottomOf="@+id/textView4"
+            app2:cardCornerRadius="15dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/covidd"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Selama 70 tahun terakhir, para ilmuwan telah menemukan bahwa virus corona dapat menginfeksi tikus, tikus, anjing, kucing, kalkun, kuda, babi, dan ternak. Terkadang, hewan-hewan ini dapat menularkan virus corona ke manusia.Virus corona bertanggung jawab atas beberapa wabah di seluruh dunia, termasuk pandemi Severe Acute Respiratory Syndrome (SARS) 2002-2003 dan wabah Middle East Respiratory Syndrome (MERS) di Korea Selatan pada tahun 2015.Baru-baru ini, virus corona baru muncul dan dikenal sebagai COVID-19 memicu wabah di Cina pada Desember 2019, dan merebak di berbagai negara sehingga WHO mendeklarasikannya sebagai pandemi global."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app2:layout_constraintEnd_toEndOf="parent"
+            app2:layout_constraintStart_toStartOf="parent"
+            app2:layout_constraintTop_toBottomOf="@id/cardView7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
